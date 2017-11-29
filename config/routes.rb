@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  # get 'users/new'
+  #
+  # get 'users/create'
+
   root 'pictures#index'
   get 'pictures' => 'pictures#index'
 
@@ -11,4 +15,6 @@ Rails.application.routes.draw do
   patch 'pictures/:id' => 'pictures#update'
 
   delete 'pictures/:id' => 'pictures#destroy'
+
+  resource :users, only: %i(create new)
 end
