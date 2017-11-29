@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   post 'sessions/create'
 
-  delete 'sessions' => 'session#destroy'
+  delete 'sessions' => 'sessions#destroy'
 
   # get 'users/new'
   #
