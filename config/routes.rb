@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
+  post 'sessions/create'
+
+  delete 'sessions' => 'session#destroy'
+
   # get 'users/new'
   #
   # get 'users/create'
