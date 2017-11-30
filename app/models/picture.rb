@@ -1,6 +1,6 @@
 class Picture < ApplicationRecord
 
-  
+  belongs_to :user
 
 
   validates :artist, :url, presence: true
